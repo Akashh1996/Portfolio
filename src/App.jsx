@@ -3,10 +3,15 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 /* import MouseParticles from 'react-mouse-particles';
+
  */
 /* import Typewriter from 'typewriter-effect';
  */
 import Particles from 'react-particles-js';
+import Roll from 'react-reveal/Roll';
+import Bounce from 'react-reveal/Bounce';
+import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
 
 import './App.css';
 import Nav from './nav/Nav';
@@ -16,7 +21,7 @@ function App() {
   const [isOpen, setOpen] = useState('');
   const name = 'Hi,';
   const name3 = "I'm Akash,";
-  const name1 = 'Web Developer';
+  const name1 = 'web Developer';
 
   // eslint-disable-next-line no-unused-vars
 
@@ -40,9 +45,9 @@ function App() {
           if (letter !== ' ') {
             letter.classList.add('show');
           }
-        }, index * 100);
+        }, index * 150);
       });
-    }, 400);
+    }, 100);
   }
 
   const second = document.getElementsByClassName('second');
@@ -55,7 +60,7 @@ function App() {
           }
         }, index * 100);
       });
-    }, 800);
+    }, 400);
   }
   const third = document.getElementsByClassName('third');
   function Animate3() {
@@ -65,9 +70,9 @@ function App() {
           if (letter !== ' ') {
             letter.classList.add('show');
           }
-        }, index * 100);
+        }, index * 80);
       });
-    }, 1200);
+    }, 1100);
   }
   let x = 0;
 
@@ -104,9 +109,11 @@ function App() {
       />
       <div className="body">
         <div className="Logo1" onClick={() => setOpen(true)}>
-          <div className="bar" />
-          <div className="bar" />
-          <div className="bar" />
+          <Roll>
+            <div className="bar" />
+            <div className="bar" />
+            <div className="bar" />
+          </Roll>
         </div>
         {/*    <div className="header">
         <div className="Logo">
@@ -135,7 +142,9 @@ function App() {
           <div className="clearfix" />
           <div className="seperator thirddiv">
             {name2.map((letter) => (
-              <li id={letter} className="third three letter" key={Math.random()}><h1>{letter}</h1></li>
+              <>
+                <li id={letter} className="third three letter" key={Math.random()}><h1>{letter}</h1></li>
+              </>
             ))}
           </div>
           <div className="clearfix" />
@@ -155,7 +164,9 @@ function App() {
       /> */}
 
         <div style={{ marginTop: '20px' }} />
-        <Nav className="myelem" />
+        <Fade bottom delay={1800} duration={1500}>
+          <Nav className="myelem" />
+        </Fade>
 
       </div>
       {/*  <div className="scroll">
@@ -167,6 +178,8 @@ function App() {
       >
         <h1 style={{ display: 'none' }}>Its menu</h1>
       </div>
+      <About />
+      <About />
       <About />
     </div>
 
