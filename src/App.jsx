@@ -164,7 +164,7 @@ function App() {
       /> */}
 
         <div style={{ marginTop: '20px' }} />
-        <Fade bottom delay={1800} duration={1500}>
+        <Fade bottom delay={1400} duration={2000}>
           <Nav className="myelem" />
         </Fade>
 
@@ -178,8 +178,6 @@ function App() {
       >
         <h1 style={{ display: 'none' }}>Its menu</h1>
       </div>
-      <About />
-      <About />
       <About />
     </div>
 

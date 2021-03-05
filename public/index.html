@@ -10,6 +10,10 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -40,5 +44,76 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script src="particles.js"></script>
+    <script>
+     
+     $( document ).ready( function() {
+
+var entries = [ 
+    
+    { label: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML', target: 'blank', tooltip: 'One year' },
+    { label: 'React', url: 'https://reactjs.org/', target: 'blank', tooltip: 'I love react' },
+    { label: 'CSS', url: 'http://www.jqueryscript.net/', target: 'blank', tooltip: 'One year' },
+    { label: 'Unit Testing', url: 'http://forum.jswelt.de/', target: 'blank', tooltip: 'One year' },
+    { label: 'Jest', url: 'https://jestjs.io/', target: 'One year', tooltip: 'Fav Testing Library' },
+    { label: 'Bootstrap', url: 'http://codepen.io/', target: 'blank', tooltip: 'One year' },
+    { label: 'Redux', url: 'http://codepen.io/', target: 'blank', tooltip: 'Love it!!' },
+    { label: 'Material UI', url: 'http://threejs.org/', target: 'blank', tooltip: 'One year' },
+    { label: 'Tailwind', url: 'http://webglstudio.org/', target: 'blank', tooltip: 'One year' },
+    { label: 'Node', url: 'http://jscompress.com/', target: 'blank', tooltip: 'One year' },
+    { label: 'MongoDB', url: 'https://tinypng.com/', target: 'blank', tooltip: 'One year' },
+    { label: 'Express', url: 'http://caniuse.com/', target: 'blank', tooltip: 'One year' },
+    { label: 'LOadash', url: 'https://goo.gl/', target: 'blank', tooltip: 'One year' },
+    { label: 'Scrum', url: 'http://www.opinionatedgeek.com/DotNet/Tools/HTMLEncode/Encode.aspx', target: 'blank', tooltip: 'Lets do daily :P' },
+    { label: 'Figma', url: 'https://twitter.com/niklaswebdev', target: 'blank', tooltip: 'One year' },
+    { label: 'Team work', url: 'http://nkunited.deviantart.com/', target: 'blank', tooltip: 'Working alone is boring' },
+    { label: 'Adaptive', url: 'http://gulpjs.com/', target: 'blank', tooltip: 'I can adapt easily' },
+    { label: 'Fast Learner', url: 'https://www.browsersync.io/', target: 'blank', tooltip: 'Like the speed of light' },
+    { label: 'GitHub', url: 'https://github.com/', target: 'blank', tooltip: 'One year' },
+    { label: 'MongoDB', url: 'https://www.shadertoy.com/', target: 'blank', tooltip: 'One year' },
+    { label: 'JQuery', url: 'http://gamua.com/starling/', target: 'blank', tooltip: 'One year' },
+    { label: 'Entertaining', url: 'http://foundation.zurb.com/', target: 'blank', tooltip: 'I am funny too' },
+
+];
+
+var settings = {
+
+    entries: entries,
+    width: 520,
+                height: 520,
+                radius: '80%',
+                radiusMin: 75,
+    bgDraw: true,
+    bgColor: '#1d1d1d',
+    opacityOver: 0.5,
+    opacityOut: 0.05,
+    opacitySpeed: 6,
+    fov: 800,
+    speed: 0.5,
+    fontFamily: 'Oswald, Arial, sans-serif',
+    fontSize: '15',
+    fontColor: '#fff',
+    fontWeight: 'normal',//bold
+    fontStyle: 'normal',//italic 
+    fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+    fontToUpperCase: true,
+    tooltipFontFamily: 'Oswald, Arial, sans-serif',
+    tooltipFontSize: '11',
+    tooltipFontColor: '#fff',
+    tooltipFontWeight: 'normal',//bold
+    tooltipFontStyle: 'normal',//italic 
+    tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+    tooltipFontToUpperCase: false,
+    tooltipTextAnchor: 'middle',
+    tooltipDiffX: 0,
+    tooltipDiffY: 20
+
+};
+
+//var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+$( '#holder' ).svg3DTagCloud( settings );
+
+} );
+
+    </script>
   </body>
 </html>
