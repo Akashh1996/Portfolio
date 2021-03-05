@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
+
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 /* import Bounce from 'react-reveal/Bounce';
