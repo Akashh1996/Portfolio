@@ -10,7 +10,6 @@ import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
 import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
-
 import './App.css';
 import Nav from './nav/Nav';
 import About from './About';
@@ -18,8 +17,8 @@ import About from './About';
 function App() {
   const [isOpen, setOpen] = useState('');
   const name = 'Hi,';
-  const name3 = "I'm Akash,";
-  const name1 = 'web Developer';
+  const name3 = "I’m Akash,";
+  const name1 = 'web developer';
 
   // eslint-disable-next-line no-unused-vars
 
@@ -90,21 +89,42 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Particles
-        className="particle"
-        params={{
-          particles: {
-            line_linked: {
-              shadow: {
-                enable: true,
-                color: 'red',
-                blur: 50,
-              },
-            },
-          },
-        }}
-
-      />
+       <Particles className="particle"
+            params={{
+                particles: {
+                    number: {
+                        value: 40,
+                        density: {
+                            enable: true,
+                            value_area: 1000
+                        }
+                    },
+                    color: {
+                        value: '#08fdd8'
+                    },
+                    opacity: {
+                        value: 0.05,
+                        anim: {
+                            enable: true
+                        }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 12
+                        }
+                    },
+                    line_linked: {
+                        enable: false
+                    },
+                    move: {
+                        speed: 0.2
+                    }
+                 }    
+            }}    
+        />
       <div className="body">
         <div className="Logo1" onClick={() => setOpen(true)}>
           <Roll>

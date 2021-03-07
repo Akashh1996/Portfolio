@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@font-face {
+  font-family: 'coolveticaregular';
+  src: url('./coolvetica/coolvetica.regular-webfont.woff') format('woff2'),
+       url('./coolvetica/coolvetica.regular-webfont.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   font-family: sans-serif;
 }
 body{
   color: #fff ;
@@ -91,11 +99,22 @@ li.break::after{
 /* .main, .about{
 padding: 40px 40px 0 70px;
 } */
-.main::before, .main::after{
+.main::before{
   content: "<h1>";
   font-size: 20px;
   position: absolute;
-  margin-top: -8px;
+  margin-top: -22px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  left: 4rem;
+}
+.thirddiv::after{
+  content: "</h1>";
+  font-size: 20px;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 4rem;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
@@ -135,8 +154,8 @@ h1:hover{
   display: table;
 }
 h1{
-  font-size: 5.4rem;
-  font-weight: 600;
+  font-size: 6rem;
+  line-height: 5.4rem;
 }
 
 
@@ -160,18 +179,18 @@ h1{
  .seconddiv li.show:nth-child(5){
   color: #FD2155;
   animation: akash .1s linear;
-  text-shadow: -3px 2px #08fdd8;
+  text-shadow: -7px 0px #08fdd8;
 
 } 
-li.show:nth-child(1){
+/* li.show:nth-child(1){
   color: #08fdd8;
-}
+} */
 
 
 
 @keyframes akash {
   from {
-      transform: rotate(-105deg);
+      transform: rotate(-145deg);
 
   }
   to {
@@ -214,7 +233,6 @@ li.show:nth-child(1){
   font-size: 7rem;
   cursor: pointer;
   animation: logo 4s linear;
-
   z-index: 1000;
 
 }
@@ -341,11 +359,12 @@ div.menu{
   border-bottom: 2px solid #FD2155;
 }
 button{
-  padding: 15px 30px;
+  padding: 0px 30px;
   color: white;
   letter-spacing: 6px;
 /*   animation: button 3s linear;
  */  outline-style: none;
+ color: #08fdd8;
 
 
   
@@ -362,9 +381,9 @@ button{
 } */
 
 button {
-  padding: 20px 40px;
+  padding: 17px 40px;
   border: 1px solid #08fdd8;
-  background: linear-gradient( to left, #1d1d1d 50%,     #08fdd8 50% );
+  background: linear-gradient( to left, #1d1d1d 50%, #08fdd8 50% );
   background-size: 200% 100%;
   background-position: right bottom;
   cursor: pointer;
@@ -374,6 +393,16 @@ button {
       background-position: left bottom;
       color: black;
   }
+}
+button span::after{
+  content: "";
+    width: 4px;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    background: #08fdd8;
+    position: absolute;
+    z-index: 5;
 }
 @keyframes button {
   /*  from {
@@ -425,7 +454,9 @@ button {
   position: relative;
 } */
  h1{
-  letter-spacing: -0.0400em;
+  letter-spacing: -0.025rem;
+  font-family: "coolveticaregular";
+
 }
 .scroll{
   position: absolute;
@@ -666,4 +697,11 @@ text{
     justify-content: center;
     padding: 0!important;
   }
+}
+.main{
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+.text-zone{
+  padding-left: 5rem;
 }

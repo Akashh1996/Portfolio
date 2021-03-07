@@ -15,6 +15,7 @@ function NavBar() {
 
   return (
     <>
+      <div className="text-zone">
       <div className="typewriter">
         <p className="intro">Front End Developer / Back End Developer</p>
       </div>
@@ -22,10 +23,11 @@ function NavBar() {
         <Flip top>
           <button type="button">
             {' '}
-            Contact Me!
+            <span>Contact Me!</span>
             {' '}
           </button>
         </Flip>
+      </div>
       </div>
 
     </>
