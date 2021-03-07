@@ -17,33 +17,42 @@
 body{
   color: #fff ;
   background-color: #1d1d1d;
-
-
-}
-.name{
-  text-align: center;
-  color: white;
- 
 }
 
+.text-zone{
+  padding: 2rem 5rem;
+}
+.span:nth-child(9){
+  color: #FD2155;
+  animation: akash .9s linear !important;
+  text-shadow: -6px 1px #08fdd8;
+  transform: scale(1.12);
+  padding-right: 3px;
+
+} 
+.span:nth-child(9):hover{
+  color: #FD2155;
+}
+@keyframes akash {
+  from {
+      transform: rotate(-720deg);
+
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
+
  
-li{
-  list-style-type: none;
-  float: left;
+li, .span{
   opacity: 0;
   transition: all .5s linear;
-  animation: 1s rubberBand;
-  animation: mover 1s infinite  alternate; 
-
-
 }
-li.show{
+.span.show{
   opacity: 1;
-  transform: translateY(0px);
   white-space: pre;
+  float: left;
   animation: 1s rubberBand;
-
-
 }
 
 li.break::after{
@@ -101,29 +110,28 @@ padding: 40px 40px 0 70px;
 } */
 .main::before{
   content: "<h1>";
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
   margin-top: -22px;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
-  left: 4rem;
+  margin-left: -14px;
 }
-.thirddiv::after{
+.main::after{
   content: "</h1>";
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
-  margin-left: 1rem;
-  margin-top: 4rem;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
+  margin-left: -14px;
+
 }
 
 
 
 .letter:hover{
- -webkit-animation: mover 1s infinite  alternate;
   animation: mover 1s infinite  alternate; 
  /*   animation: rubberBand 0.8s infinite ; 
    color: #08fdd8; */
@@ -176,41 +184,24 @@ h1{
   }
 }
 
- .seconddiv li.show:nth-child(5){
-  color: #FD2155;
-  animation: akash .1s linear;
-  text-shadow: -7px 0px #08fdd8;
-
-} 
-/* li.show:nth-child(1){
-  color: #08fdd8;
-} */
 
 
-
-@keyframes akash {
-  from {
-      transform: rotate(-145deg);
-
-  }
-  to {
-      transform: rotate(0deg);
-  }
-}
 .typewriter{
   font-family:  sans-serif;
 }
 .typewriter::before{
   content: "<p>";
-  font-size: 20px;
-
+  font-size: 17px;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
+  margin-left: -14px;
+
 }
 .typewriter::after{
   content: "</p>";
-  font-size: 20px;
+  font-size: 17px;
+  margin-left: -14px;
 
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
@@ -305,13 +296,21 @@ div.menu{
 
 .Logo1 {
   transform: skew(-0deg);
-  float: right;
 /*   animation: logo 4s linear;
  */ 
   cursor: pointer;
-
   
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
 
+}
+.myMenu{
+  background-color: rgba(0,0,0,.3);
+  padding: 12px 12px;
+  border-radius: 2px;
 }
 .Logo1 h1{
   color: #FD2155;
@@ -333,35 +332,36 @@ div.menu{
 }
 .wrapper::before{
   content: "<html>";
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
-  margin-left: 0px;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
+  left: 3%;
+  top: 2%;
 }
 .body::before{
   content: "<body>";
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
-  margin-left: 13px;
-  top: 3%;
+  top: 6%;
+  left: 5%;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
 }
 .bar{
-  width: 35px;
-  height: 5px;
-  background-color:  #08fdd8;
+  width: 27px;
+  height: 3px;
+  background-color: #fff;
   margin: 6px 0;
-  border-radius: 10px;
-  border-bottom: 2px solid #FD2155;
+  border-radius: 1px;
+
 }
 button{
   padding: 0px 30px;
   color: white;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 /*   animation: button 3s linear;
  */  outline-style: none;
  color: #08fdd8;
@@ -381,12 +381,13 @@ button{
 } */
 
 button {
-  padding: 17px 40px;
+  padding: 16px 42px;
   border: 1px solid #08fdd8;
   background: linear-gradient( to left, #1d1d1d 50%, #08fdd8 50% );
   background-size: 200% 100%;
   background-position: right bottom;
   cursor: pointer;
+  position: relative;
   transition: all ease .5s;
   cursor: pointer;
   &:hover {
@@ -394,12 +395,12 @@ button {
       color: black;
   }
 }
-button span::after{
+button span.contact::after{
   content: "";
     width: 4px;
     height: 4px;
-    right: 0;
-    bottom: 0;
+    right: -1px;
+    bottom: -1px;
     background: #08fdd8;
     position: absolute;
     z-index: 5;
@@ -458,12 +459,7 @@ button span::after{
   font-family: "coolveticaregular";
 
 }
-.scroll{
-  position: absolute;
-  left: 0;
-  top: 80%;
-  transform: rotate(90deg);
-}
+
 .menu-items-hide{
   position: absolute;
   top: 0;
@@ -528,6 +524,8 @@ button span::after{
 
 } 
 
+
+
 .myName{
   position: relative;
 }
@@ -565,6 +563,8 @@ button span::after{
 h2{
   font-size: 3rem;
   color: #08fdd8;
+  font-family: "coolveticaregular";
+
 }
 .about p{
   font-family: 'Open Sans', sans-serif;
@@ -651,6 +651,8 @@ text{
 .myskills{
   color: #08fdd8;
   font-size: 15px;
+  font-family: "coolveticaregular";
+
 }
 /* #holder{
   margin: auto;
@@ -665,16 +667,17 @@ text{
  .about{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
-.about{
-  margin-top: 40px;
-}
 
  .about-description p{
    font-size: 1rem;
 
+ }
+ .about{
+   padding: 0 5rem;
  }
 
  .about-description {
@@ -700,8 +703,58 @@ text{
 }
 .main{
   padding-left: 5rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
-.text-zone{
-  padding-left: 5rem;
+.myelem{
+  padding: 0 5rem;
+
+}
+
+.main{
+  width: fit-content;
+}
+
+h1{
+  display: inline;
+  font-weight: bolder;
+}
+@media screen and (max-width: 800px) {
+  h1{
+    font-size: 4rem;
+    line-height: 3.4rem;
+  }
+}
+.scroll-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -40px;
+  padding: 0 10px;
+}
+.scroll, .scroll2{
+  animation: 1s upDown linear alternate infinite;
+
+}
+@keyframes upDown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.scroll{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: .9rem;
+  font-family: sans-serif;
+}
+.scroll2{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  font-size: .9rem;
+  font-family: sans-serif;
 }

@@ -21,7 +21,7 @@ function About() {
 
   return (
     <>
-      <div className="about" style={{ marginTop: '140px' }}>
+      <div className="about" >
         <div className="about-description">
           <h2>About Akash</h2>
           <p>

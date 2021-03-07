@@ -20,13 +20,11 @@ function NavBar() {
         <p className="intro">Front End Developer / Back End Developer</p>
       </div>
       <div className="button-area">
-        <Flip top>
           <button type="button">
             {' '}
-            <span>Contact Me!</span>
+            <span className="contact">Contact Me!</span>
             {' '}
           </button>
-        </Flip>
       </div>
       </div>
 

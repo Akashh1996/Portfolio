@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 
  */
 /* import Typewriter from 'typewriter-effect';
+
  */
-import Particles from 'react-particles-js';
+import AiOutlineArrowDown from "react-icons/fa"
 import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
 import Reveal from 'react-reveal/Reveal';
@@ -13,6 +14,8 @@ import Fade from 'react-reveal/Fade';
 import './App.css';
 import Nav from './nav/Nav';
 import About from './About';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';import Particles from 'react-particles-js';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 function App() {
   const [isOpen, setOpen] = useState('');
@@ -93,7 +96,7 @@ function App() {
             params={{
                 particles: {
                     number: {
-                        value: 40,
+                        value: 10,
                         density: {
                             enable: true,
                             value_area: 1000
@@ -127,69 +130,49 @@ function App() {
         />
       <div className="body">
         <div className="Logo1" onClick={() => setOpen(true)}>
-          <Roll>
+            <div className="myMenu">
+            <Roll>
             <div className="bar" />
             <div className="bar" />
             <div className="bar" />
-          </Roll>
-        </div>
-        {/*    <div className="header">
-        <div className="Logo">
-          <h1>A</h1>
-        </div>
+            </Roll>
 
-        <div className="menu-bars">
-          <div className="menu" />
-          <div className="menu" />
-          <div className="menu" />
+            </div>
         </div>
-      </div> */}
 
         <div className="main">
-          <div className="name seperator">
-            {splited.map((letter) => (
-              <li id={letter} className="any one letter" key={Math.random()}><h1>{letter}</h1></li>
+        <div className="clearfix"></div>
+           <h1>
+           {splited.map((letter) => (
+              <span id={letter} className="span any letter" key={Math.random()}>{letter}</span>
             ))}
-          </div>
-          <div className="clearfix" />
-          <div className="seperator seconddiv">
+            <div className="clearfix"></div>
+
             {name4.map((letter) => (
-              <li id={letter} className={letter === 'A' ? 'second two letter akash' : 'second two letter'} key={Math.random()}><h1>{letter}</h1></li>
+              <span id={letter} className='second any two letter span'  key={Math.random()}><h1>{letter}</h1></span>
             ))}
-          </div>
-          <div className="clearfix" />
-          <div className="seperator thirddiv">
+            <div className="clearfix"></div>
             {name2.map((letter) => (
-              <>
-                <li id={letter} className="third three letter" key={Math.random()}><h1>{letter}</h1></li>
-              </>
+                <span id={letter} className="third any three letter span" key={Math.random()}><h1>{letter}</h1></span>
             ))}
-          </div>
-          <div className="clearfix" />
+            <div className="clearfix"></div>
 
+           </h1>
         </div>
-
-        {/*   <div>
-        {
-                text.split('\n').map((str) => str.split('').map((f) => <span>{f}</span>))
-              }
-      </div> */}
-        {/*  <MouseParticles
-        g={1}
-        color="random"
-        cull="MuiSvgIcon-root,MuiButton-root"
-        level={6}
-      /> */}
-
-        <div style={{ marginTop: '20px' }} />
-        <Fade bottom delay={1400} duration={2000}>
+        <Fade bottom delay={1600} duration={1400}>
           <Nav className="myelem" />
         </Fade>
 
       </div>
-      {/*  <div className="scroll">
-        <p>Scroll Down</p>
-      </div> */}
+       <div className="scroll-wrapper">
+       <div className="scroll">
+        <p> <span>scroll down</span> <span style={{color:"#fff"}} > <GetAppIcon /> </span> </p>
+      </div> 
+       <div className="scroll2">
+        <p> <span>scroll down</span> <span style={{color:"#fff"}} > <GetAppIcon /> </span> </p>
+      </div> 
+       </div>
+
       <div
         className={isOpen ? 'menu-items' : 'menu-item-hide'}
         onClick={() => setOpen(false)}
@@ -198,7 +181,6 @@ function App() {
       </div>
       <About />
     </div>
-
   );
 }
 
