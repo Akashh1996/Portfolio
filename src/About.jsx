@@ -75,7 +75,7 @@ function About() {
           <br />
           </Slide>
         </div>
-        <Slide right duration={4000}>
+        <Slide right duration={2000}>
         <div id="holder" style={{ marginTop: '50px'}}>
   </div>
         </Slide>

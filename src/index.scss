@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @font-face {
   font-family: 'coolveticaregular';
@@ -424,6 +424,7 @@ button span.contact::after{
   color: #8d8d8d;
   font-size: 1rem;
   letter-spacing: 0.3rem;
+  font-family: 'Open Sans', sans-serif;
 
   
 }
@@ -739,6 +740,9 @@ h1{
   .text-zone{
     padding: 2rem 3rem;
   }
+  .about-description{
+    padding: 2rem 3rem;
+  }
 }
 
 .scroll-wrapper{
@@ -782,6 +786,9 @@ h1{
   .about {
    padding: 0;
    overflow: hidden;
+  }
+  .about-description{
+    padding: 2rem 3rem;
   }
 
 }
@@ -839,15 +846,18 @@ h2{
 
 @media screen and (max-width: 400px) {
   h1{
-    font-size: 2rem;
-    line-height: 1.9rem;
+    font-size: 3rem;
+    line-height: 2.4rem;
   }
   .span:nth-child(9){
     text-shadow: -4px 1px #08fdd8;
   
   } 
+  .about{
+    margin-top: 50px;
+  }
   .main{
-    padding-left: 1.5rem;
+    padding: 3rem 1.5rem;
   }
   .text-zone{
     padding: 2rem 1.5rem;
@@ -872,13 +882,15 @@ h2{
   h2{
     font-size: 2rem;
   }
-  .about{
-    margin-top: 0;
-  }
+
   h2::after{
     margin-top: 2rem;
   }
   svg{
     margin-top: -100px;
   }
+  .scroll-wrapper{
+    margin-top: 6px;
+  }
+ 
 }

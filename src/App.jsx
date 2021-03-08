@@ -187,17 +187,17 @@ function App() {
 
            </h1>
         </div>
-        <Fade bottom delay={1600} duration={1400}>
+        <Fade bottom delay={200} duration={1200}>
           <Nav className="myelem" />
         </Fade>
 
       </div>
        <div className="scroll-wrapper">
        <div className="scroll">
-        <p> <span>scroll down</span> <span style={{color:"#fff"}} > <GetAppIcon /> </span> </p>
+        <p> <span>scroll down</span> </p>
       </div> 
        <div className="scroll2">
-        <p> <span>scroll down</span> <span style={{color:"#fff"}} > <GetAppIcon /> </span> </p>
+        <p> <span>scroll down</span> </p>
       </div> 
        </div>
 
