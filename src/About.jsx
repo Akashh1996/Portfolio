@@ -41,7 +41,7 @@ function About() {
     <>
       <div className="about" >
         <div className="about-description">
-          <Slide left duration={1000}>
+          <Slide left duration={2000}>
           <h2>
             About Me
           </h2>
@@ -75,9 +75,10 @@ function About() {
           <br />
           </Slide>
         </div>
-        <Slide right duration={2000}>
+        <Slide right
+         duration={2000}>
         <div id="holder" style={{ marginTop: '50px'}}>
-  </div>
+        </div>
         </Slide>
         
       </div>

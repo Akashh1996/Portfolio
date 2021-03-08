@@ -19,6 +19,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 
 function App() {
   const [isOpen, setOpen] = useState('');
+  const [isPrev,setPrev] = useState(false)
   const name = 'Hi,';
   const name3 = "I’m Akash,";
   const name1 = 'web developer';
@@ -34,6 +35,29 @@ function App() {
 
   const my = text.split('\n');
   console.log(my);
+
+  const body = document.querySelector("body")
+  const rect = document.querySelector("rect")
+
+  function changeMe() {
+    if(!isPrev){
+      body.style.background = "#fff"
+      body.style.color = "black"
+      if(rect){
+        rect.style.fill = "white"
+      }
+      setPrev(true)
+    }else{
+      body.style.background = "#1d1d1d"
+      body.style.color = "#fff"
+      if(rect){
+        rect.style.fill = "#1d1d1d"
+      }
+      setPrev(false)
+    }
+  }
+
+  console.log(isPrev)
 
   /*   const d = my.split('');
  */
@@ -92,70 +116,6 @@ function App() {
 
   return (
     <div className="wrapper">
-       <Particles className="particle"
-            params={{
-                particles: {
-                    number: {
-                        value: 0,
-                        density: {
-                            enable: true,
-                            value_area: 1500
-                        },
-                        color: "red"
-                    },
-                    line_linked: {
-                        enable: true
-                    },
-                    move: {
-                        speed: .5
-                    },
-                    line_linked: {
-                      color: '#08fdd8',
-                      opacity: .1
-                    },
-                    "interactivity": {
-                      "detect_on": "canvas",
-                      "events": {
-                        "onhover": {
-                          "enable": true,
-                          "mode": "repulse"
-                        },
-                        "onclick": {
-                          "enable": true,
-                          "mode": "push"
-                        },
-                        "resize": true
-                      },
-                      "modes": {
-                        "grab": {
-                          "distance": 800,
-                          "line_linked": {
-                            "opacity": 1
-                          }
-                        },
-                        "bubble": {
-                          "distance": 800,
-                          "size": 80,
-                          "duration": 2,
-                          "opacity": 0.8,
-                          "speed": 3
-                        },
-                        "repulse": {
-                          "distance": 400,
-                          "duration": 0.4
-                        },
-                        "push": {
-                          "particles_nb": 4
-                        },
-                        "remove": {
-                          "particles_nb": 2
-                        }
-                      }
-                    },
-                
-                 }    
-            }}    
-        />
       <div className="body">
         <div className="Logo1" onClick={() => setOpen(true)}>
             <div className="myMenu">
@@ -208,6 +168,8 @@ function App() {
         <h1 style={{ display: 'none' }}>Its menu</h1>
       </div> */}
       <About />
+
+      <button type="button" onClick={()=> changeMe()} >Change</button>
     </div>
   );
 }

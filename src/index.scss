@@ -56,6 +56,7 @@ body{
 .about{
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 li, .span{
@@ -88,6 +89,9 @@ li.break::after{
 .hi span:hover{
   animation:1s rubberBand!important;
   
+}
+.about{
+  padding-bottom: 10rem;
 }
 @keyframes rubberBand {
   from {
@@ -453,15 +457,6 @@ button span.contact::after{
   opacity: 0.48;
   color: red;
 } */
-.particle {
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 90%;
-  background-color: #1d1d1d;
-}
-
 
 .myelem{
   z-index: 1;
@@ -898,8 +893,8 @@ h1{
   h2::after{
     margin-top: 2rem;
   }
-  svg{
-    margin-top: -90px;
+  #holder{
+    margin-top: -6rem!important;
   }
   .scroll-wrapper{
     margin-top: 6px;
