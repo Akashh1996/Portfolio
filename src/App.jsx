@@ -38,21 +38,19 @@ function App() {
 
   const body = document.querySelector("body")
   const rect = document.querySelector("rect")
+  const about = document.querySelector("#holder")
+  console.log(about)
 
   function changeMe() {
     if(!isPrev){
       body.style.background = "#fff"
       body.style.color = "black"
-      if(rect){
-        rect.style.fill = "white"
-      }
+      holder.style.display = "none"
       setPrev(true)
     }else{
       body.style.background = "#1d1d1d"
       body.style.color = "#fff"
-      if(rect){
-        rect.style.fill = "#1d1d1d"
-      }
+      holder.style.display = "block"
       setPrev(false)
     }
   }
