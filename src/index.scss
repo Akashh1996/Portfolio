@@ -676,17 +676,17 @@ text{
    font-size: 1rem;
 
  }
- .about{
-   padding: 0 5rem;
- }
+
 
  .about-description {
   width: 40%;
 
  }
  #holder{
-   margin-top: -1rem!important;
+   margin-top: 1rem!important;
  }
+
+
 
  @media screen and (max-width: 1000px) {
   .about {
@@ -724,6 +724,23 @@ h1{
     line-height: 3.4rem;
   }
 }
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .span:nth-child(9){
+    text-shadow: -4px 1px #08fdd8;
+  
+  } 
+  .main{
+    padding-left: 3rem;
+  }
+  .text-zone{
+    padding: 2rem 3rem;
+  }
+}
+
 .scroll-wrapper{
   display: flex;
   justify-content: space-between;
@@ -757,4 +774,111 @@ h1{
 
   font-size: .9rem;
   font-family: sans-serif;
+}
+.about{
+  padding: 0 5rem;
+}
+@media screen and (max-width: 1000px) {
+  .about {
+   padding: 0;
+   overflow: hidden;
+  }
+
+}
+
+  h2::before{
+  content: "<h2>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  margin-top: -15px;
+ 
+}
+  .myIntro::before{
+  content: "<p>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  margin-top: -25px;
+ 
+}
+  h2::after{
+  content: "</h2>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  margin-top: 4rem;
+
+
+
+}
+/* .about-description{
+  position: relative;
+} */
+  .myIntroLast::after{
+  content: "</p>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+
+
+}
+h2{
+  font-size: 4rem;
+}
+.about-section{
+  padding: 2.4rem 0;
+}
+
+@media screen and (max-width: 400px) {
+  h1{
+    font-size: 2rem;
+    line-height: 1.9rem;
+  }
+  .span:nth-child(9){
+    text-shadow: -4px 1px #08fdd8;
+  
+  } 
+  .main{
+    padding-left: 1.5rem;
+  }
+  .text-zone{
+    padding: 2rem 1.5rem;
+  }
+  button{
+     padding: 8px;
+
+  }
+  .button-area{
+    padding-top: 20px;
+  }
+  .intro, .about-description p{
+    font-size: .9rem;
+    letter-spacing: 0;
+  }
+  .scroll-wrapper{
+    padding: 0 1px;
+  }
+  .about-description{
+    padding: 2rem 1.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .about{
+    margin-top: 0;
+  }
+  h2::after{
+    margin-top: 2rem;
+  }
+  svg{
+    margin-top: -100px;
+  }
 }

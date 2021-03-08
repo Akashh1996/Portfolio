@@ -96,35 +96,63 @@ function App() {
             params={{
                 particles: {
                     number: {
-                        value: 10,
+                        value: 0,
                         density: {
                             enable: true,
-                            value_area: 1000
-                        }
-                    },
-                    color: {
-                        value: '#08fdd8'
-                    },
-                    opacity: {
-                        value: 0.05,
-                        anim: {
-                            enable: true
-                        }
-                    },
-                    size: {
-                        value: 3,
-                        random: true,
-                        anim: {
-                            enable: true,
-                            speed: 12
-                        }
+                            value_area: 1500
+                        },
+                        color: "red"
                     },
                     line_linked: {
-                        enable: false
+                        enable: true
                     },
                     move: {
-                        speed: 0.2
-                    }
+                        speed: .5
+                    },
+                    line_linked: {
+                      color: '#08fdd8',
+                      opacity: .1
+                    },
+                    "interactivity": {
+                      "detect_on": "canvas",
+                      "events": {
+                        "onhover": {
+                          "enable": true,
+                          "mode": "repulse"
+                        },
+                        "onclick": {
+                          "enable": true,
+                          "mode": "push"
+                        },
+                        "resize": true
+                      },
+                      "modes": {
+                        "grab": {
+                          "distance": 800,
+                          "line_linked": {
+                            "opacity": 1
+                          }
+                        },
+                        "bubble": {
+                          "distance": 800,
+                          "size": 80,
+                          "duration": 2,
+                          "opacity": 0.8,
+                          "speed": 3
+                        },
+                        "repulse": {
+                          "distance": 400,
+                          "duration": 0.4
+                        },
+                        "push": {
+                          "particles_nb": 4
+                        },
+                        "remove": {
+                          "particles_nb": 2
+                        }
+                      }
+                    },
+                
                  }    
             }}    
         />
@@ -173,12 +201,12 @@ function App() {
       </div> 
        </div>
 
-      <div
+    {/*   <div
         className={isOpen ? 'menu-items' : 'menu-item-hide'}
         onClick={() => setOpen(false)}
       >
         <h1 style={{ display: 'none' }}>Its menu</h1>
-      </div>
+      </div> */}
       <About />
     </div>
   );

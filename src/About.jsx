@@ -10,6 +10,8 @@ import Slide from 'react-reveal/Slide';
  */
 import { useSpring, animated } from 'react-spring';
 import Roll from 'react-reveal/Roll';
+import Reveal from 'react-reveal/Reveal';
+
 
 function About() {
 /*   const [isReady, setReady] = useState(false);
@@ -19,12 +21,32 @@ function About() {
     }, 2000);
   }, []); */
 
+  let x = "About Me"
+  let splited = x.split("")
+  
+  const second = document.getElementsByClassName('aboutme');
+  function Animate2() {
+    setTimeout(() => {
+      Array.from(second).forEach((letter, index) => {
+        setTimeout(() => {
+          if (letter !== ' ') {
+            letter.classList.add('show');
+          }
+        }, index * 100);
+      });
+    }, 400);
+  }
+  Animate2()
   return (
     <>
       <div className="about" >
         <div className="about-description">
-          <h2>About Akash</h2>
-          <p>
+          <Slide left duration={1000}>
+          <h2>
+            About Me
+          </h2>
+         <div className="about-section">
+         <p className="myIntro">
             The primary area of my interest is FrontEnd but I do
             enjoy BackEnd.Afterall, everything is JavaScript and I have
             a deep relationship with JavaScript. What I am seeking is to build
@@ -44,19 +66,20 @@ function About() {
           </p>
 
           <br />
-          <p>
+          <p className="myIntroLast">
             Besides my professional life, I love sports, especially basketball.
             Also I love to cook
             and sometimes I do Yoga too.
           </p>
+         </div>
           <br />
-
-          <h3 className="myskills" style={{ fontSize: '30px' }}>
-            Akash's Skills
-            ➡
-          </h3>
+          </Slide>
         </div>
-        <div id="holder" style={{ marginTop: '50px' }} />
+        <Slide right duration={4000}>
+        <div id="holder" style={{ marginTop: '50px'}}>
+  </div>
+        </Slide>
+        
       </div>
 
     </>
