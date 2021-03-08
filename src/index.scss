@@ -30,8 +30,19 @@ body{
   padding-right: 3px;
 
 } 
+.main{
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
 .span:nth-child(9):hover{
   color: #FD2155;
+}
+.about-description{
+  padding-left:  5rem;
+  padding-right:  3rem;
+}
+#holder{
+  padding-right: 2rem;
 }
 @keyframes akash {
   from {
@@ -42,8 +53,11 @@ body{
       transform: rotate(0deg);
   }
 }
+.about{
+  display: flex;
+  align-items: center;
+}
 
- 
 li, .span{
   opacity: 0;
   transition: all .5s linear;
@@ -562,7 +576,7 @@ button span.contact::after{
 
 } */
 h2{
-  font-size: 3rem;
+  font-size: 4rem;
   color: #08fdd8;
   font-family: "coolveticaregular";
 
@@ -656,20 +670,11 @@ text{
   font-family: "coolveticaregular";
 
 }
-/* #holder{
-  margin: auto;
+.keyword{
+  color: #08fdd8;
 }
- */
-
-/*  .about{
-   display: flex;
-
- } */
-
  .about{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-top: 60px;
 }
 
@@ -680,17 +685,10 @@ text{
  }
 
 
- .about-description {
-  width: 40%;
-
- }
- #holder{
-   margin-top: 1rem!important;
- }
 
 
 
- @media screen and (max-width: 1000px) {
+ @media screen and (max-width: 1024px) {
   .about {
    flex-direction: column;
   }
@@ -702,11 +700,28 @@ text{
     justify-content: center;
     padding: 0!important;
   }
+  .text-zone{
+    padding: 2rem 3rem;
+  }
+  .main{
+    padding-left: 3rem;
+
+  }
+ 
+  #holder{
+    margin: auto;
+  }
+  .about-description{
+    padding: 0rem 3rem;
+  }
+  h1{
+    font-size: 5.5rem;
+    line-height: 4.8rem;
+  }
+
+  
 }
-.main{
-  padding-left: 5rem;
-  padding-top: 1rem;
-}
+
 .myelem{
   padding: 0 5rem;
 
@@ -725,6 +740,16 @@ h1{
     font-size: 4rem;
     line-height: 3.4rem;
   }
+  h2{
+    font-size: 3.5rem;
+  }
+  .intro{
+    font-size: .9rem;
+  }
+  button{
+    padding: 14px 30px;
+  }
+   
 }
 @media screen and (max-width: 600px) {
   h1{
@@ -734,16 +759,9 @@ h1{
   .span:nth-child(9){
     text-shadow: -4px 1px #08fdd8;
   
-  } 
-  .main{
-    padding-left: 3rem;
   }
-  .text-zone{
-    padding: 2rem 3rem;
-  }
-  .about-description{
-    padding: 2rem 3rem;
-  }
+
+ 
 }
 
 .scroll-wrapper{
@@ -780,17 +798,12 @@ h1{
   font-size: .9rem;
   font-family: sans-serif;
 }
-.about{
-  padding: 0 5rem;
-}
+
 @media screen and (max-width: 1000px) {
   .about {
-   padding: 0;
    overflow: hidden;
   }
-  .about-description{
-    padding: 2rem 3rem;
-  }
+  
 
 }
 
@@ -838,9 +851,7 @@ h1{
 
 
 }
-h2{
-  font-size: 4rem;
-}
+
 .about-section{
   padding: 2.4rem 0;
 }
@@ -864,7 +875,7 @@ h2{
     padding: 2rem 1.5rem;
   }
   button{
-     padding: 8px;
+     padding: 8px 12px;
 
   }
   .button-area{
@@ -881,14 +892,14 @@ h2{
     padding: 2rem 1.5rem;
   }
   h2{
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   h2::after{
     margin-top: 2rem;
   }
   svg{
-    margin-top: -100px;
+    margin-top: -90px;
   }
   .scroll-wrapper{
     margin-top: 6px;
