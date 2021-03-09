@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import Bounce from 'react-reveal/Bounce';
 import Shake from 'react-reveal/Shake';
 import Slide from 'react-reveal/Slide';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+
 /* import Flash from 'react-reveal/Flash';
 
  */
@@ -43,13 +45,10 @@ function About() {
           </header>
          <div className="about-section">
          <p className="myIntro">
-            The primary area of my interest is FrontEnd but I do
-            enjoy BackEnd.Afterall, everything is <span className="keyword">JavaScript</span> and I have
+            The primary area of my interest is Front end but I do
+            enjoy Back end. Afterall, everything is <span className="keyword">JavaScript</span> and I have
             a deep relationship with JavaScript. What I am seeking is to build
-            something great that would make people life easier.Do you remember
-            MS-DOS a long time ago ? Well, that was the first time I wrote my code.
-            And here I am now,
-            coding everyday.
+            something great that would make people life easier.
           </p>
           <br />
           <p>
@@ -60,13 +59,20 @@ function About() {
             is inherent.I prefer to keep learning, continue challenging myself, and do
             interesting things that matter.
           </p>
-
-          <br />
-          <p className="myIntroLast">
+          <br/>
+          <p >
             Besides my professional life, I love sports, especially basketball.
             Also I love to cook
             and sometimes I do Yoga too.
           </p>
+          <br/>
+          <p className="myIntroLast"><h3>My Skills</h3> I create responsive websites that are user interactive, with best pratices.
+                The main area of my expertise is <span className="keyword">MERN</span> stack along with <span className="keyword">clean code</span> and <span className="keyword">SOLID</span> principles. I also 
+                focus on <span className="keyword">testing</span> to make sure the funcitionalities. I have worked with CSS frameworks and
+                libraries like Tailwind, Bootstrap and and JavaScript frameworks like <span className="keyword">React</span>,material UI, Angular.
+                If you want to know me profesionally, download my
+                </p>
+            <button type="button" className="button-resume"> <span>Resume</span> <span> <ArrowDownwardIcon style={{fontSize:"1rem", marginTop:"3px"}} /> </span> </button>
          </div>
           <br />
           </Slide>

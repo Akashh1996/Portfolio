@@ -14,8 +14,10 @@ import Fade from 'react-reveal/Fade';
 import './App.scss';
 import Nav from './nav/Nav';
 import About from './About';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';import Particles from 'react-particles-js';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import Particles from 'react-particles-js';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import MySkills from "./mySkills/MySkills"
 
 function App() {
   const [isOpen, setOpen] = useState('');
@@ -158,7 +160,6 @@ function App() {
       </div> 
        </div>
       <About />
-      <button type="button" onClick={()=> changeMe()} >Change</button>
     </div>
   );
 }
