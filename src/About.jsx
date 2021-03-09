@@ -70,7 +70,7 @@ function About() {
                 The main area of my expertise is <span className="keyword">MERN</span> stack along with <span className="keyword">clean code</span> and <span className="keyword">SOLID</span> principles. I also 
                 focus on <span className="keyword">testing</span> to make sure the funcitionalities. I have worked with CSS frameworks and
                 libraries like Tailwind, Bootstrap and and JavaScript frameworks like <span className="keyword">React</span>,material UI, Angular.
-                If you want to know me profesionally, download my
+                If you want to know me profesionally, download my CV.
                 </p>
             <button type="button" className="button-resume"> <span>Resume</span> <span> <ArrowDownwardIcon style={{fontSize:"1rem", marginTop:"3px"}} /> </span> </button>
          </div>
@@ -82,7 +82,6 @@ function About() {
         <div id="holder" style={{ marginTop: '50px'}}>
         </div>
         </Slide>
-        
       </div>
 
     </>
