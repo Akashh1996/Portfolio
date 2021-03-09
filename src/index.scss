@@ -40,7 +40,7 @@ body{
 .about-description{
   padding-left:  5rem;
   padding-right:  3rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 #holder{
   padding-right: 2rem;
@@ -670,6 +670,7 @@ h1{
   z-index: 1;
   position: absolute;
   margin-top: -1rem;
+  font-weight: 100;
  
 }
   .myIntro::before{
@@ -691,6 +692,8 @@ h1{
   position: absolute;
   bottom: -1.5rem;
   left: 0;
+  font-weight: 100;
+
 
 }
 
@@ -721,9 +724,6 @@ h1{
     text-shadow: -4px 1px #08fdd8;
   
   } 
-  .about{
-    margin-top: 50px;
-  }
   .main{
     padding: 3rem 1.5rem;
   }
