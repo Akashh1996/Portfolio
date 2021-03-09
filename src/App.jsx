@@ -1,27 +1,30 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 /* import MouseParticles from 'react-mouse-particles';
 
  */
 /* import Typewriter from 'typewriter-effect';
+
  */
-import Particles from 'react-particles-js';
+import AiOutlineArrowDown from "react-icons/fa"
 import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
 import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
-
-import './App.css';
+import './App.scss';
 import Nav from './nav/Nav';
 import About from './About';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import Particles from 'react-particles-js';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import MySkills from "./mySkills/MySkills"
 
 function App() {
   const [isOpen, setOpen] = useState('');
+  const [isPrev,setPrev] = useState(false)
   const name = 'Hi,';
-  const name3 = "I'm Akash,";
-  const name1 = 'web Developer';
+  const name3 = "I’m Akash,";
+  const name1 = 'web developer';
 
   // eslint-disable-next-line no-unused-vars
 
@@ -34,6 +37,27 @@ function App() {
 
   const my = text.split('\n');
   console.log(my);
+
+  const body = document.querySelector("body")
+  const rect = document.querySelector("rect")
+  const about = document.querySelector("#holder")
+  console.log(about)
+
+  function changeMe() {
+    if(!isPrev){
+      body.style.background = "#fff"
+      body.style.color = "black"
+      holder.style.display = "none"
+      setPrev(true)
+    }else{
+      body.style.background = "#1d1d1d"
+      body.style.color = "#fff"
+      holder.style.display = "block"
+      setPrev(false)
+    }
+  }
+
+  console.log(isPrev)
 
   /*   const d = my.split('');
  */
@@ -92,97 +116,51 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Particles
-        className="particle"
-        params={{
-          particles: {
-            line_linked: {
-              shadow: {
-                enable: true,
-                color: 'red',
-                blur: 50,
-              },
-            },
-          },
-        }}
-
-      />
       <div className="body">
         <div className="Logo1" onClick={() => setOpen(true)}>
-          <Roll>
+            <div className="myMenu">
+            <Roll>
             <div className="bar" />
             <div className="bar" />
             <div className="bar" />
-          </Roll>
-        </div>
-        {/*    <div className="header">
-        <div className="Logo">
-          <h1>A</h1>
-        </div>
+            </Roll>
 
-        <div className="menu-bars">
-          <div className="menu" />
-          <div className="menu" />
-          <div className="menu" />
+            </div>
         </div>
-      </div> */}
-
         <div className="main">
-          <div className="name seperator">
-            {splited.map((letter) => (
-              <li id={letter} className="any one letter" key={Math.random()}><h1>{letter}</h1></li>
+        <div className="clearfix"></div>
+           <h1>
+           {splited.map((letter) => (
+              <span id={letter} className="span any letter" key={Math.random()}>{letter}</span>
             ))}
-          </div>
-          <div className="clearfix" />
-          <div className="seperator seconddiv">
+            <div className="clearfix"></div>
+
             {name4.map((letter) => (
-              <li id={letter} className={letter === 'A' ? 'second two letter akash' : 'second two letter'} key={Math.random()}><h1>{letter}</h1></li>
+              <span id={letter} className='second any two letter span'  key={Math.random()}><h1>{letter}</h1></span>
             ))}
-          </div>
-          <div className="clearfix" />
-          <div className="seperator thirddiv">
+            <div className="clearfix"></div>
             {name2.map((letter) => (
-              <>
-                <li id={letter} className="third three letter" key={Math.random()}><h1>{letter}</h1></li>
-              </>
+                <span id={letter} className="third any three letter span" key={Math.random()}><h1>{letter}</h1></span>
             ))}
-          </div>
-          <div className="clearfix" />
+            <div className="clearfix"></div>
 
+           </h1>
         </div>
-
-        {/*   <div>
-        {
-                text.split('\n').map((str) => str.split('').map((f) => <span>{f}</span>))
-              }
-      </div> */}
-        {/*  <MouseParticles
-        g={1}
-        color="random"
-        cull="MuiSvgIcon-root,MuiButton-root"
-        level={6}
-      /> */}
-
-        <div style={{ marginTop: '20px' }} />
-        <Fade bottom delay={1800} duration={1500}>
+        <Fade bottom delay={200} duration={1200}>
           <Nav className="myelem" />
         </Fade>
 
       </div>
-      {/*  <div className="scroll">
-        <p>Scroll Down</p>
-      </div> */}
-      <div
-        className={isOpen ? 'menu-items' : 'menu-item-hide'}
-        onClick={() => setOpen(false)}
-      >
-        <h1 style={{ display: 'none' }}>Its menu</h1>
-      </div>
-      <About />
-      <About />
+       <div className="scroll-wrapper">
+       <div className="scroll">
+        <p> <span>scroll down <span><ArrowDownwardIcon color="white" style={{fontSize:"15px"}} /></span> </span> </p>
+      </div> 
+       <div className="scroll2">
+        <p> <span>scroll down</span> <span><ArrowDownwardIcon color="white" style={{fontSize:"15px"}} /></span> </p>
+      </div> 
+       </div>
       <About />
     </div>
-
   );
 }
 
