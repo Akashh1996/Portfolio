@@ -14,12 +14,6 @@ import Reveal from 'react-reveal/Reveal';
 
 
 function About() {
-/*   const [isReady, setReady] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setReady(true);
-    }, 2000);
-  }, []); */
 
   let x = "About Me"
   let splited = x.split("")
@@ -42,9 +36,11 @@ function About() {
       <div className="about" >
         <div className="about-description">
           <Slide left duration={2000}>
+          <header>
           <h2>
             About Me
           </h2>
+          </header>
          <div className="about-section">
          <p className="myIntro">
             The primary area of my interest is FrontEnd but I do

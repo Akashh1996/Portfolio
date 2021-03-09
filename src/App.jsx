@@ -11,7 +11,7 @@ import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
 import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
-import './App.css';
+import './App.scss';
 import Nav from './nav/Nav';
 import About from './About';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';import Particles from 'react-particles-js';
@@ -125,7 +125,6 @@ function App() {
 
             </div>
         </div>
-
         <div className="main">
         <div className="clearfix"></div>
            <h1>
@@ -152,21 +151,13 @@ function App() {
       </div>
        <div className="scroll-wrapper">
        <div className="scroll">
-        <p> <span>scroll down</span> </p>
+        <p> <span>scroll down <span><ArrowDownwardIcon color="white" style={{fontSize:"15px"}} /></span> </span> </p>
       </div> 
        <div className="scroll2">
-        <p> <span>scroll down</span> </p>
+        <p> <span>scroll down</span> <span><ArrowDownwardIcon color="white" style={{fontSize:"15px"}} /></span> </p>
       </div> 
        </div>
-
-    {/*   <div
-        className={isOpen ? 'menu-items' : 'menu-item-hide'}
-        onClick={() => setOpen(false)}
-      >
-        <h1 style={{ display: 'none' }}>Its menu</h1>
-      </div> */}
       <About />
-
       <button type="button" onClick={()=> changeMe()} >Change</button>
     </div>
   );

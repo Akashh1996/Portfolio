@@ -40,6 +40,7 @@ body{
 .about-description{
   padding-left:  5rem;
   padding-right:  3rem;
+  padding-top: 5rem;
 }
 #holder{
   padding-right: 2rem;
@@ -56,7 +57,6 @@ body{
 .about{
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 li, .span{
@@ -77,6 +77,9 @@ li.break::after{
 .hi span:hover{
   animation:1s rubberBand!important;
   
+}
+header{
+  position: relative;
 }
 .about{
   padding-bottom: 10rem;
@@ -282,7 +285,7 @@ div.menu{
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
-  left: 3%;
+  left: 2%;
   top: 2%;
 }
 .body::before{
@@ -290,7 +293,7 @@ div.menu{
   font-size: 17px;
   position: absolute;
   top: 6%;
-  left: 5%;
+  left: 3%;
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
@@ -454,14 +457,6 @@ h2{
   color: yellow;
 }
 
-path {
-  fill: transparent;
-}
-
-text {
-  fill: #FF9800;
-}
-
 .circle{
   position: absolute;
   width: 26rem;
@@ -540,7 +535,6 @@ text{
 }
  .about{
   display: flex;
-  margin-top: 60px;
 }
 
 
@@ -577,7 +571,8 @@ text{
     margin: auto;
   }
   .about-description{
-    padding: 0rem 3rem;
+    padding-left: 3rem;
+    padding-left: 3rem;
   }
   h1{
     font-size: 5.5rem;
@@ -663,13 +658,8 @@ h1{
   font-size: .9rem;
   font-family: sans-serif;
 }
-
-@media screen and (max-width: 1000px) {
-  .about {
-   overflow: hidden;
-  }
-  
-
+.about{
+  overflow: hidden;
 }
 
   h2::before{
@@ -679,7 +669,7 @@ h1{
   color: #515152;
   z-index: 1;
   position: absolute;
-  margin-top: -15px;
+  margin-top: -1rem;
  
 }
   .myIntro::before{
@@ -699,7 +689,8 @@ h1{
   color: #515152;
   z-index: 1;
   position: absolute;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
+  left: 0;
 
 
 
@@ -711,12 +702,16 @@ h1{
   font-family: 'La Belle Aurore',cursive;
   color: #515152;
   z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 3%;
 
 
 }
 
 .about-section{
-  padding: 2.4rem 0;
+  padding: 3rem 0;
+  position: relative;
 }
 
 @media screen and (max-width: 400px) {
@@ -758,9 +753,7 @@ h1{
     font-size: 3rem;
   }
 
-  h2::after{
-    margin-top: 2rem;
-  }
+
   #holder{
     margin-top: -6rem!important;
   }
