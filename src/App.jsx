@@ -149,15 +149,6 @@ function App() {
         <Fade bottom delay={200} duration={1200}>
           <Nav className="myelem" />
         </Fade>
-
-      </div>
-       <div className="scroll-wrapper">
-       <div className="scroll">
-        <p> <span>scroll down <span><ArrowDownwardIcon color="white" style={{fontSize:"15px"}} /></span> </span> </p>
-      </div> 
-       <div className="scroll2">
-        <p> <span>scroll down</span> <span><ArrowDownwardIcon color="white" style={{fontSize:"15px"}} /></span> </p>
-      </div> 
        </div>
       <About />
     </div>
