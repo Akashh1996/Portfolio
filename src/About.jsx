@@ -72,7 +72,7 @@ function About() {
                 libraries like Tailwind, Bootstrap and and JavaScript frameworks like <span className="keyword">React</span>,material UI, Angular.
                 If you want to know me profesionally, download my CV.
                 </p>
-            <button type="button" className="button-resume"> <span>Resume</span> <span> <ArrowDownwardIcon style={{fontSize:"1rem", marginTop:"3px"}} /> </span> </button>
+            <button type="button" className="button-resume"> <span className="resume">Resume</span> <span> <ArrowDownwardIcon style={{fontSize:"1rem", marginTop:"3px"}} /> </span> </button>
          </div>
           <br />
           </Slide>

@@ -6,6 +6,8 @@ import React, { useState } from 'react';
 /* import Typewriter from 'typewriter-effect';
 
  */
+
+
 import AiOutlineArrowDown from "react-icons/fa"
 import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
@@ -18,6 +20,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Particles from 'react-particles-js';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import MySkills from "./mySkills/MySkills"
+import Projects from "./Projects/Projects"
 
 function App() {
   const [isOpen, setOpen] = useState('');
@@ -151,6 +154,7 @@ function App() {
         </Fade>
        </div>
       <About />
+      <Projects/>
     </div>
   );
 }
