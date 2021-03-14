@@ -21,9 +21,10 @@ import Particles from 'react-particles-js';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import MySkills from "./mySkills/MySkills"
 import Projects from "./Projects/Projects"
+import Form from "./Form/Form"
 
 function App() {
-  const [isOpen, setOpen] = useState('');
+  const [isOpen, setOpen] = useState(false);
   const [isPrev,setPrev] = useState(false)
   const name = 'Hi,';
   const name3 = "I’m Akash,";
@@ -38,13 +39,10 @@ function App() {
 
   const text = 'Line one\nLine two\nLine three';
 
-  const my = text.split('\n');
-  console.log(my);
 
   const body = document.querySelector("body")
   const rect = document.querySelector("rect")
   const about = document.querySelector("#holder")
-  console.log(about)
 
   function changeMe() {
     if(!isPrev){
@@ -60,7 +58,6 @@ function App() {
     }
   }
 
-  console.log(isPrev)
 
   /*   const d = my.split('');
  */
@@ -109,24 +106,24 @@ function App() {
     Animate3();
     x = 1;
   }
-  /*  console.log(x);
 
-  setTimeout(() => {
-    setTrue(true);
-  }, 6000);
+  console.log(isOpen)
 
-  console.log(isTrue); */
+  function handleClick() {
+    if(isOpen){
+      setOpen(false)
+    }else
+    setOpen(true)
+  }
 
   return (
     <div className="wrapper">
       <div className="body">
-        <div className="Logo1" onClick={() => setOpen(true)}>
+        <div className="Logo1" onClick={() => handleClick()}>
             <div className="myMenu">
-            <Roll>
             <div className="bar" />
             <div className="bar" />
             <div className="bar" />
-            </Roll>
 
             </div>
         </div>
@@ -155,6 +152,7 @@ function App() {
        </div>
       <About />
       <Projects/>
+      <Form /> 
     </div>
   );
 }

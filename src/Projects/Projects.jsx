@@ -9,13 +9,16 @@ import seven from "./Screenshot (454).png"
 import eight from "./Screenshot (438).png"
 import nine from "./Screenshot (437).png"
 import ten from "./Screenshot (459).png"
+import Flip from 'react-reveal/Flip';
+
 
 function Projects() {
-    return(
-        <div className="portfolio">
+    return(  
+        <div className="portfolio" style={{overflow:"hidden"}}>
+        <Flip right duration={2000}>
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>HTML/CSS</span>
           </div>
           <div className="image">
             <img src={one} alt="" />
@@ -24,7 +27,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>HTML/CSS/JAVASCRIPT...</span>
           </div>
           <div className="image">
             <img src={two} alt="" />
@@ -33,7 +36,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>React/Flux/Jest...</span>
           </div>
           <div className="image">
             <img src={three} alt="" />
@@ -42,7 +45,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>HTML/Javacript/API...</span>
           </div>
           <div className="image">
             <img src={four} alt="" />
@@ -51,7 +54,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>MERN/Jest...</span>
           </div>
           <div className="image">
             <img src={five} alt="" />
@@ -60,7 +63,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>HTML/CSS/Flexbox...</span>
           </div>
           <div className="image">
             <img src={six} alt="" />
@@ -69,7 +72,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>MERN/Typescript/Jest...</span>
           </div>
           <div className="image">
             <img src={seven} alt="" />
@@ -78,7 +81,7 @@ function Projects() {
       
         <a href="#" className="card">
           <div className="content">
-            <span className="title">View Project</span>
+            <span>HTML/API/Javascript</span>
           </div>
           <div className="image">
             <img src={eight} alt="" />
@@ -87,8 +90,8 @@ function Projects() {
 
         <a href="#" className="card">
             <div className="content">
-                <span className="title">View Project</span>
-            </div>
+              <span>HTML/CSS/Javascript</span>
+              </div>
             <div className="image">
               <img src={nine} alt="" />
             </div>
@@ -97,12 +100,13 @@ function Projects() {
            
         <a href="#" className="card">
             <div className="content">
-                <span className="title">View Project</span>
+            <span>HTML/API/Javascript</span>
             </div>
             <div className="image">
               <img src={ten} alt="" />
             </div>
           </a>
+        </Flip>
       </div>
     )
 }

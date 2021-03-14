@@ -22,7 +22,7 @@ function NavBar() {
       <div className="button-area">
           <button type="button">
             {' '}
-            <span className="contact">Contact Me!</span>
+            <span className="contact">Say Hello</span>
             {' '}
           </button>
       </div>
