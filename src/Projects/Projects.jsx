@@ -9,104 +9,122 @@ import seven from "./Screenshot (454).png"
 import eight from "./Screenshot (438).png"
 import nine from "./Screenshot (437).png"
 import ten from "./Screenshot (459).png"
-import Flip from 'react-reveal/Flip';
+import Slide from 'react-reveal/Slide';
 
 
 function Projects() {
     return(  
-        <div className="portfolio" style={{overflow:"hidden"}}>
-        <Flip right duration={2000}>
+        <div className="portfolio" >
         <a href="#" className="card">
           <div className="content">
-            <span>HTML/CSS</span>
+           <span>HTML-CSS-Flexbox ... <span className="see-more"> See More</span></span>
           </div>
           <div className="image">
+          <Slide  top duration={2000}>
             <img src={one} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>HTML/CSS/JAVASCRIPT...</span>
+          <span>HTML-CSS-JavaScript... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  bottom delay={1000} duration={2000}>
             <img src={two} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>React/Flux/Jest...</span>
+          <span>React-Flux-Jest... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  top duration={2000}>
             <img src={three} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>HTML/Javacript/API...</span>
+          <span>HTML-JavaScript-API... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  bottom delay={1000} duration={2000}>
             <img src={four} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>MERN/Jest...</span>
+          <span>React-Node-MongoDB... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  top duration={2000}>
             <img src={five} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>HTML/CSS/Flexbox...</span>
+          <span>HTML-Bootstrap-CSS... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  bottom delay={1000} duration={2000}>
             <img src={six} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>MERN/Typescript/Jest...</span>
+          <span>React-Node-TypeScript... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  top duration={2000}>
             <img src={seven} alt="" />
+          </Slide>
           </div>
         </a>
       
         <a href="#" className="card">
           <div className="content">
-            <span>HTML/API/Javascript</span>
+          <span>HTML-JavaScript-API... <span className="see-more">See More</span></span>
           </div>
           <div className="image">
+          <Slide  bottom delay={1000} duration={2000}>
             <img src={eight} alt="" />
+          </Slide>
           </div>
         </a>
 
         <a href="#" className="card">
             <div className="content">
-              <span>HTML/CSS/Javascript</span>
+            <span>HTML-JavasCript-API... <span className="see-more">See More</span></span>
               </div>
             <div className="image">
+            <Slide  top duration={2000}>
               <img src={nine} alt="" />
+          </Slide>
             </div>
           </a>
 
            
         <a href="#" className="card">
             <div className="content">
-            <span>HTML/API/Javascript</span>
+            <span>HTML-JavasCript-API... <span className="see-more">See More</span></span>
             </div>
             <div className="image">
+            <Slide  bottom delay={1000} duration={2000}>
               <img src={ten} alt="" />
+          </Slide>
             </div>
           </a>
-        </Flip>
       </div>
     )
 }

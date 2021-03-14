@@ -153,7 +153,6 @@ h1{
   line-height: 5.4rem;
 }
 
-
 .typewriter{
   font-family:  sans-serif;
 }
@@ -786,8 +785,8 @@ h1{
   width: 20%;
   overflow: hidden;
   position: relative;
-
 }
+
 .card .content {
   z-index: 2;
   width: 100%;
@@ -797,12 +796,14 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
   box-sizing: border-box;
-  min-height: 80px;
+  min-height: 10px;
   background: #08fdd8;
   color: black;
-  font-family: serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+
 }
 .card .image {
   z-index: 1;
@@ -813,7 +814,7 @@ h1{
   width: 100%;
   transition: all 0.5s ease;
   transform: scale(1.2);
-  opacity: .8;
+  opacity: .8!important;
 
 }
 
@@ -824,7 +825,10 @@ h1{
 
 .card:hover .image img {
   transform: scale(1);
-  opacity: 1;
+  opacity: 1!important;
+}
+.see-more{
+  color: #ff0b56;
 }
 
 
