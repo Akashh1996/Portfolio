@@ -20,7 +20,7 @@ body{
 }
 
 .text-zone{
-  padding: 2rem 5rem;
+  padding: 3rem 5rem;
 }
 .span:nth-child(9){
   color: #EE1D52;
@@ -309,6 +309,7 @@ button{
 }
 .button-area{
   z-index: 1;
+  padding-top: 1rem;
 }
 
 
@@ -722,7 +723,7 @@ h1{
     font-size: 3rem;
     line-height: 2.4rem;
   }
-
+  
   .main{
     padding: 3rem 1.5rem;
   }
@@ -827,9 +828,9 @@ h1{
   transform: scale(1);
   opacity: 1!important;
 }
-.see-more{
+/* .see-more{
   color: #ff0b56;
-}
+} */
 
 
 @media screen and (max-width: 768px) {
