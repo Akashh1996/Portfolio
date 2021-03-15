@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 /* import MouseParticles from 'react-mouse-particles';
@@ -7,7 +8,11 @@ import React, { useState } from 'react';
 
  */
 
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { Icon, InlineIcon } from '@iconify/react';
+import codewarsIcon from '@iconify-icons/simple-icons/codewars';
 import AiOutlineArrowDown from "react-icons/fa"
 import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
@@ -125,6 +130,14 @@ function App() {
             <div className="bar" />
             <div className="bar" />
 
+            </div>
+        </div>
+
+        <div className="socail-media-wrapper">
+            <div className="social-media">
+              <a href="https://www.linkedin.com/in/akash-sapkota-front-end-developer/" target="_blank"><LinkedInIcon /></a>
+              <a href="https://github.com/Akashh1996" target="_blank"><GitHubIcon /></a>
+              <a href="https://www.facebook.com/theblack.crow.338/" target="_blank"><FacebookIcon /></a>
             </div>
         </div>
         <div className="main">

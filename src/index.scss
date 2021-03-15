@@ -42,6 +42,32 @@ body{
   padding-top: 2rem;
   width: 50%;
 }
+.socail-media-wrapper{
+  position: absolute;
+  z-index: 99999999999999;
+  top: 15%;
+  right: 0%;
+  padding: 10px 25px;
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  z-index: 9999999999999999;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.social-media>a{
+  margin: 3px 0;
+  cursor: pointer;
+}
+.social-media a>svg:hover{
+  color: #08fdd8;
+  transition: .5s all ease-in;
+}
+
 #holder{
   padding-left: 2rem;
 }
@@ -749,6 +775,9 @@ h1{
   }
   h2{
     font-size: 3rem;
+  }
+  .about{
+    padding-top: 5rem;
   }
 
 
