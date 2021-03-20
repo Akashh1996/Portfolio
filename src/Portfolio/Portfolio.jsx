@@ -12,7 +12,7 @@ import ten from "./Screenshot (459).png"
 import Slide from 'react-reveal/Slide';
 
 
-function Projects() {
+function Portfolio() {
     return(  
         <div className="portfolio" >
         <a href="#" className="card">
@@ -129,4 +129,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default Portfolio

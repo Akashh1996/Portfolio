@@ -1,10 +1,10 @@
 import React from 'react';
-import Cover from "./Cover/Cover"
+import Landing from "./Landing/Landing"
 
 function App() {
  
   return (
-    <Cover/>
+    <Landing/>
   );
 }
 
