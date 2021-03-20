@@ -1,18 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from 'react';
-/* import Bounce from 'react-reveal/Bounce';
- */import Flip from 'react-reveal/Flip';
+import React from 'react';
 
 import './nav.scss';
 
 function NavBar() {
-/*   const [isReady, setReady] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setReady(true);
-    }, 2000);
-  }, []); */
-
   return (
     <>
       <div className="text-zone">
