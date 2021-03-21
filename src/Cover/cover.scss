@@ -40,12 +40,14 @@
   z-index: 99999999999999;
   top: 15%;
   right: 0%;
-  padding: 10px 22px;
+  padding: 10px 15px;
 }
 .social-media{
   display: flex;
   flex-direction: column;
   z-index: 9999999999999999;
+  background-color: rgba(0,0,0,.3);
+  padding: 3px;
 }
 
 .social-media>a{
@@ -403,7 +405,7 @@ h2{
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   h1{
     font-size: 2.5rem;
     line-height: 2.4rem;
