@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@font-face {
+  font-family: 'coolveticaregular';
+  src: url('../coolvetica/coolvetica.regular-webfont.woff') format('woff2'),
+       url('../coolvetica/coolvetica.regular-webfont.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+.cover-info{
+  padding: 3rem 5rem;
+}
+.span:nth-child(9){
+  color: #EE1D52!important;
+  text-shadow: -6px 0px #08fdd8;
+  transform: rotate(0deg);
+  animation: rotate .9s linear !important;
+  
+} 
+@keyframes rotate{
+  from{
+    transform: rotate(-720deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+.cover-name{
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+
+
+.socail-media-wrapper{
+  position: absolute;
+  z-index: 99999999999999;
+  top: 15%;
+  right: 0%;
+  padding: 10px 25px;
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  z-index: 9999999999999999;
+}
+
+.social-media>a{
+  margin: 3px 0;
+  cursor: pointer;
+}
+.social-media a>svg:hover{
+  color: #08fdd8;
+  transition: .5s all ease-in;
+}
+
+#holder{
+  padding-left: 2rem;
+}
+
+.span{
+  display: inline-block;
+  white-space: pre;
+  opacity: 0;
+}
+.span.show{
+  padding: 0 ;
+  opacity: 1;
+  animation: 1s rubberBand;
+
+ }
+
+ 
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, .8, .6);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+header{
+  position: relative;
+}
+
+h3{
+  color: #ff0b56;
+  font-size: 1.7rem;
+  font-family: 'coolveticaregular';
+}
+
+.cover-name::before{
+  content: "<h1>";
+  font-size: 17px;
+  position: absolute;
+  margin-top: -22px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  margin-left: -14px;
+}
+
+.cover-name::after{
+  content: "</h1>";
+  font-size: 17px;
+  position: absolute;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  margin-left: -14px;
+
+}
+
+h1{
+  font-size: 6rem;
+  line-height: 5.4rem;
+}
+.title-wrapper{
+  font-family:  sans-serif;
+}
+.title-wrapper::before{
+  content: "<p>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  margin-left: -14px;
+}
+.title-wrapper::after{
+  content: "</p>";
+  font-size: 17px;
+  margin-left: -14px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo1 {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+
+}
+.myMenu{
+  background-color: rgba(0,0,0,.3);
+  padding: 12px 12px;
+  border-radius: 2px;
+}
+
+.wrapper::before{
+  content: "<html>";
+  font-size: 17px;
+  position: absolute;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  left: 2%;
+  top: 2%;
+}
+.body::before{
+  content: "<body>";
+  font-size: 17px;
+  position: absolute;
+  top: 6%;
+  left: 3%;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+}
+.bar{
+  width: 27px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  border-radius: 1px;
+
+}
+button{
+  padding: 0px 30px;
+  color: white;
+  letter-spacing: 4px;
+ outline-style: none;
+ color: #08fdd8;
+
+}
+.button-wrapper{
+  z-index: 1;
+  padding-top: 1rem;
+}
+button {
+  padding: 16px 42px;
+  border: 1px solid #08fdd8;
+  background: linear-gradient( to left, #1d1d1d 50%, #08fdd8 50% );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  position: relative;
+  transition: all ease .5s;
+  cursor: pointer;
+  &:hover {
+      background-position: left bottom;
+      color: black;
+  }
+}
+button span.contact::after, button span.resume::after{
+  content: "";
+    width: 4px;
+    height: 4px;
+    bottom: -1px;
+    right: -1px;
+    background: #08fdd8;
+    position: absolute;
+    z-index: 5;
+}
+.title {
+  color: #8d8d8d;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+ h1{
+  letter-spacing: -0.025rem;
+  font-family: "coolveticaregular";
+
+}
+
+.menu-items-hide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  display: none;
+}
+h2{
+  font-size: 4rem;
+  color: #08fdd8;
+  font-family: "coolveticaregular";
+}
+
+ @media screen and (max-width: 1024px) {
+  #holder{
+    margin-top: 0!important;
+    justify-content: center;
+    padding: 0!important;
+  }
+  .cover-info{
+    padding: 2rem 3rem;
+  }
+  .cover-name{
+    padding-left: 3rem;
+  }
+ 
+  .about-description{
+    padding-left: 3rem;
+    padding-left: 3rem;
+  }
+  h1{
+    font-size: 5.5rem;
+    line-height: 4.8rem;
+  }  
+}
+
+.button-resume{
+  padding: 3px 10px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.cover-name{
+  width: fit-content;
+}
+
+@media screen and (max-width: 769px) {
+  h1{
+    font-size: 4rem;
+    line-height: 3.4rem;
+  }
+  h2{
+    font-size: 3.5rem;
+  }
+  .title{
+    font-size: .9rem;
+
+  }
+  button{
+    padding: 14px 30px;
+  }
+  .cover-name{
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
+  }
+   
+}
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .span:nth-child(9){
+    text-shadow: -4px 0px #08fdd8;
+  
+  }
+  .title{
+    letter-spacing: 0.1rem!important;
+  }
+
+ 
+}
+
+
+
+  h2::before{
+  content: "<h2>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  margin-top: -1rem;
+  font-weight: 100;
+ 
+}
+  .myIntro::before{
+  content: "<p>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  margin-top: -25px;
+ 
+}
+  h2::after{
+  content: "</h2>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  font-weight: 100;
+}
+  .myIntro::after{
+  content: "</p>";
+  font-size: 17px;
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 2%;
+
+
+}
+
+
+@media screen and (max-width: 380px) {
+  h1{
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+  }
+  
+  .cover-name{
+    padding: 2rem 1.5rem;
+  }
+  .cover-info{
+    padding: 2rem 1.5rem;
+  }
+  button{
+     padding: 8px 12px;
+
+  }
+  .button-wrapper{
+    padding-top: 20px;
+  }
+  .title, .about-description p{
+    font-size: .8rem;
+    letter-spacing: 0;
+  }
+  .scroll-wrapper{
+    padding: 0 1px;
+  }
+  .about-description{
+    padding: 2rem 1.5rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  .about{
+    padding-top: 5rem;
+  }
+
+
+  #holder{
+    margin-top: -6rem!important;
+  }
+  .about p{
+    line-height: 1.6rem;
+    font-size: .9rem;
+  }
+ 
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  padding-bottom: 100px;
+
+}
+
+.portfolio h2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 50px auto 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #111;
+}
+.card {
+  width: 20%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .content {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  bottom: -150px;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  box-sizing: border-box;
+  min-height: 10px;
+  background: #08fdd8;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+
+}
+.card .image {
+  z-index: 1;
+  height: 100%;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+  opacity: .8!important;
+
+}
+
+.card:hover .content {
+  bottom: 0px;
+  color: black;
+}
+
+.card:hover .image img {
+  transform: scale(1);
+  opacity: 1!important;
+}
+@media screen and (max-width: 768px) {
+  .card {
+  width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+  width: 50%;
+  }
+}
