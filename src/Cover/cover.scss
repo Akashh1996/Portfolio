@@ -464,6 +464,7 @@ h2{
   width: 20%;
   overflow: hidden;
   position: relative;
+
 }
 
 .card .content {
@@ -506,9 +507,12 @@ h2{
   transform: scale(1);
   opacity: 1!important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .card {
-  width: 50%;
+  width: 33.33%;
+  }
+  .card:last-child{
+    display: none;
   }
 
 }
@@ -516,5 +520,8 @@ h2{
 @media screen and (max-width: 480px) {
   .card {
   width: 50%;
+  }
+  .card:last-child{
+    display: block;
   }
 }
