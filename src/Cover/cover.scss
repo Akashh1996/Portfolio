@@ -17,19 +17,24 @@
   color: #EE1D52!important;
   text-shadow: -6px 0px #08fdd8;
   transform: rotate(0deg);
+  animation: rotate .9s linear !important;
   
 } 
+@keyframes rotate{
+  from{
+    transform: rotate(-720deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
 
 .cover-name{
   padding-left: 5rem;
   padding-top: 1rem;
 }
 
-.about-description{
-  padding-left:  5rem;
-  padding-top: 2rem;
-  width: 50%;
-}
+
 .socail-media-wrapper{
   position: absolute;
   z-index: 99999999999999;
@@ -56,33 +61,49 @@
 #holder{
   padding-left: 2rem;
 }
-@keyframes akash {
-  from {
-      transform: rotate(-720deg);
-
-  }
-  to {
-      transform: rotate(0deg);
-  }
-}
-.about{
-  display: flex;
-  align-items: center;
-}
 
 .span{
   display: inline-block;
   white-space: pre;
-  transform: translate(0, 10px) rotate(-180deg) scale(1);
-    color: black;
-
+  opacity: 0;
 }
 .span.show{
-  transform: translate(0) scale(1) rotate(0deg);
-  color: white;
   padding: 0 ;
+  opacity: 1;
+  animation: 1s rubberBand;
 
  }
+
+ 
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, .8, .6);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 header{
   position: relative;
@@ -251,34 +272,9 @@ h2{
   font-size: 4rem;
   color: #08fdd8;
   font-family: "coolveticaregular";
-
 }
-.about p{
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6rem;
-}
-
-.keyword{
-  color: #08fdd8;
-}
- .about{
-  display: flex;
-}
-
- .about-description p{
-   font-size: 1rem;
-
- }
 
  @media screen and (max-width: 1024px) {
-  .about {
-   flex-direction: column;
-  }
-  .about-description{
-    width: 100%;
-    padding-right:  3rem;
-
-  }
   #holder{
     margin-top: 0!important;
     justify-content: center;
@@ -289,12 +285,8 @@ h2{
   }
   .cover-name{
     padding-left: 3rem;
-
   }
  
-  #holder{
-    margin: auto;
-  }
   .about-description{
     padding-left: 3rem;
     padding-left: 3rem;
@@ -319,7 +311,7 @@ h2{
   width: fit-content;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 769px) {
   h1{
     font-size: 4rem;
     line-height: 3.4rem;
@@ -329,9 +321,14 @@ h2{
   }
   .title{
     font-size: .9rem;
+
   }
   button{
     padding: 14px 30px;
+  }
+  .cover-name{
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
   }
    
 }
@@ -344,13 +341,14 @@ h2{
     text-shadow: -4px 0px #08fdd8;
   
   }
+  .title{
+    letter-spacing: 0.1rem!important;
+  }
 
  
 }
 
-.about{
-  overflow: hidden;
-}
+
 
   h2::before{
   content: "<h2>";
@@ -363,7 +361,7 @@ h2{
   font-weight: 100;
  
 }
-  .mytitle::before{
+  .myIntro::before{
   content: "<p>";
   font-size: 17px;
   font-family: 'La Belle Aurore',cursive;
@@ -383,10 +381,8 @@ h2{
   bottom: -1.5rem;
   left: 0;
   font-weight: 100;
-
-
 }
-  .mytitleLast::after{
+  .myIntro::after{
   content: "</p>";
   font-size: 17px;
   font-family: 'La Belle Aurore',cursive;
@@ -399,19 +395,15 @@ h2{
 
 }
 
-.about-section{
-  padding: 3rem 0;
-  position: relative;
-}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
   h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 2.4rem;
   }
   
   .cover-name{
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
   .cover-info{
     padding: 2rem 1.5rem;
@@ -424,7 +416,7 @@ h2{
     padding-top: 20px;
   }
   .title, .about-description p{
-    font-size: .9rem;
+    font-size: .8rem;
     letter-spacing: 0;
   }
   .scroll-wrapper{

@@ -32,9 +32,9 @@ function App() {
     const third = document.getElementsByClassName('third');
 
     
-    animate(first, 100,1000)
-    animate(second, 150,1800)
-    animate(third, 100,3500)
+    animate(first, 150,100)
+    animate(second, 100,400)
+    animate(third, 80,1100)
 
 
   function handleClick() {

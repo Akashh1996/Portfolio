@@ -1,0 +1,56 @@
+
+.about p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6rem;
+  }
+  
+  .keyword{
+    color: #08fdd8;
+  }
+
+   .about-description p{
+     font-size: 1rem;
+  
+   }
+   .about-section{
+    padding: 3rem 0;
+    position: relative;
+  }
+  .about-description{
+    width: 50%;
+    padding-left:  5rem;
+    padding-top: 3rem;
+
+  }
+  .about{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+    .about{
+        flex-direction: column;
+    }
+    .about-description{
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #holder{
+        margin: auto;
+      }
+  }
+@media (max-width: 380px) {
+
+    .about-description{
+        padding: 1rem 1rem!important;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .about-description p{
+        font-size: .88rem;
+    
+      }
+ 
+  }

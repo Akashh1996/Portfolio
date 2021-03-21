@@ -14,23 +14,6 @@ import "./about.scss"
 
 
 function About() {
-
-  let x = "About Me"
-  let splited = x.split("")
-  
-  const second = document.getElementsByClassName('aboutme');
-  function Animate2() {
-    setTimeout(() => {
-      Array.from(second).forEach((letter, index) => {
-        setTimeout(() => {
-          if (letter !== ' ') {
-            letter.classList.add('show');
-          }
-        }, index * 100);
-      });
-    }, 400);
-  }
-  Animate2()
   return (
     <>
       <div className="about" >
