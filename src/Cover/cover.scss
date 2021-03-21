@@ -405,14 +405,14 @@ h2{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   h1{
     font-size: 2.5rem;
     line-height: 2.4rem;
   }
   
   .cover-name{
-    padding: 5rem 1.5rem;
+    padding: 6rem 1.5rem;
   }
   .cover-info{
     padding: 2rem 1.5rem;
@@ -424,6 +424,9 @@ h2{
   .social-media a{
     padding: 3px;
     font-size: 20px;
+  }
+  .socail-media-wrapper{
+    padding: 32px 15px;
   }
 
   .button-wrapper{
