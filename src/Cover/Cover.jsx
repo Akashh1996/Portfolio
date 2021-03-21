@@ -5,6 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import "./cover.scss"
 import Fade from "react-reveal/Fade"
+import PhoneIcon from '@material-ui/icons/Phone';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
               <a href="https://www.linkedin.com/in/akash-sapkota-front-end-developer/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
               <a href="https://github.com/Akashh1996" target="_blank" rel="noreferrer"><GitHubIcon /></a>
               <a href="https://www.facebook.com/theblack.crow.338/" target="_blank" rel="noreferrer"><FacebookIcon /></a>
+              <a href="tel:34632030253" target="_blank" rel="noreferrer"><PhoneIcon /></a>
             </div>
         </div>
 
