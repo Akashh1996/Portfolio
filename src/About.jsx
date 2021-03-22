@@ -7,14 +7,32 @@ import Shake from 'react-reveal/Shake';
 import Slide from 'react-reveal/Slide';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
+/* import Flash from 'react-reveal/Flash';
+
+ */
 import { useSpring, animated } from 'react-spring';
 import Roll from 'react-reveal/Roll';
 import Reveal from 'react-reveal/Reveal';
-import "./about.scss"
-import Resume from './Akash CV-EN.pdf';
 
 
 function About() {
+
+  let x = "About Me"
+  let splited = x.split("")
+  
+  const second = document.getElementsByClassName('aboutme');
+  function Animate2() {
+    setTimeout(() => {
+      Array.from(second).forEach((letter, index) => {
+        setTimeout(() => {
+          if (letter !== ' ') {
+            letter.classList.add('show');
+          }
+        }, index * 100);
+      });
+    }, 400);
+  }
+  Animate2()
   return (
     <>
       <div className="about" >
@@ -54,12 +72,7 @@ function About() {
                 libraries like Tailwind, Bootstrap and and JavaScript frameworks like <span className="keyword">React</span>,material UI, Angular.
                 If you want to know me profesionally, download my CV.
                 </p>
-            <button type="button" className="button-resume">
-               <a href={Resume} target="_blank" rel="noreferrer" download>
-                   <span className="resume">Resume</span>
-                   <span><ArrowDownwardIcon style={{fontSize:"1rem", marginTop:"3px"}} /></span>
-              </a> 
-            </button>
+            <button type="button" className="button-resume"> <span className="resume">Resume</span> <span> <ArrowDownwardIcon style={{fontSize:"1rem", marginTop:"3px"}} /> </span> </button>
          </div>
           <br />
           </Slide>
