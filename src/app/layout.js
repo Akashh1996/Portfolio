@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
             <head>
-                <link rel='icon' type='image/svg+xml' href='/favicon.svg'></link>
+                <link rel="icon" type="image/png" href="/favicon.png"></link>
                 <meta property='og:title' content='Akash Sapkota | Portfolio' />
                 <meta
                     property='og:image'
